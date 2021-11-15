@@ -4,8 +4,11 @@ import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:weather/view/home/home.dart';
 import 'package:weather/view_model/weather_view_model.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  MobileAds.instance.initialize();
   runApp(
     MultiProvider(
       providers: [

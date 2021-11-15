@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:weather/api/api_response.dart';
 import 'package:weather/setting/colors.dart';
+import 'package:weather/view/admob/banner.dart';
 import 'package:weather/view/home/city_search.dart';
 import 'package:weather/view/home/day_weather.dart';
 import 'package:weather/view/home/today_weather.dart';
@@ -71,6 +72,7 @@ class _HomeState extends State<Home> {
           SizedBox(
             height: Get.height * 0.03,
           ),
+              AdmobBanner(),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
